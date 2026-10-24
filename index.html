@@ -249,6 +249,12 @@ footer a{color:var(--muted)}
 .video-sec{max-width:1000px;margin:0 auto;padding:40px 20px 0;text-align:center}
 .video-sec h2{font-size:26px;margin:0 0 20px;color:var(--ink)}
 @media (max-width:600px){.video-sec h2{font-size:22px}}
+.hero-video{max-width:none;border-radius:8px;box-shadow:0 12px 40px rgba(0,0,0,.45)}
+@media (min-width:901px){
+  .hero-video{width:min(100%, calc((100vh - 412px) * 16 / 9));min-width:440px;margin:0 auto}
+  .hero-grid{align-items:start}
+  .trust{margin-top:12px}
+}
 </style>
 </head>
 <body>
@@ -303,29 +309,7 @@ footer a{color:var(--muted)}
     <div class="hero-grid">
       <!-- Colonne gauche : Avant / Après + confiance -->
       <div>
-        <div class="ba">
-          <div class="ba-row">
-            <div class="ba-col before">
-              <div class="ba-label">AVANT</div>
-              <ul>
-                <li><i>✗</i>Devis garage plus cher que la voiture</li>
-                <li><i>✗</i>Impossible à vendre à un particulier</li>
-                <li><i>✗</i>Contrôle technique exigé, risque de vices cachés</li>
-                <li><i>✗</i>Dépanneuse et démarches à vos frais</li>
-              </ul>
-            </div>
-            <div class="ba-col after">
-              <div class="ba-label">APRÈS</div>
-              <ul>
-                <li><i>✓</i>Offre ferme sous 24 heures</li>
-                <li><i>✓</i>Enlèvement gratuit à domicile</li>
-                <li><i>✓</i>Aucun contrôle technique, aucune réparation</li>
-                <li><i>✓</i>Cession et carte grise gérées pour vous</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ba-foot">Si la réparation dépasse 50 % de la valeur du véhicule, vendre est presque toujours plus rentable.</div>
-        </div>
+        <video class="process-video hero-video" src="/videos/reprise-auto-france-process.mp4" poster="/videos/reprise-auto-france-process.jpg" autoplay muted loop playsinline preload="auto" aria-label="Vidéo : comment vendre votre voiture en panne avec Reprise Auto France, en 3 étapes"></video>
 
         <!-- Avis client réel -->
         <div class="trust">
@@ -460,11 +444,6 @@ footer a{color:var(--muted)}
       Vous décrivez votre véhicule en 2 minutes, nous vous faisons une offre basée sur sa valeur réelle.
       <b>Si elle vous convient, nous venons le chercher chez vous et vous recevez le paiement par virement instantané avant la remise des clés.</b>
     </p>
-
-<section class="video-sec">
-  <h2>Comment ça marche ?</h2>
-  <video class="process-video" src="/videos/reprise-auto-france-process.mp4" poster="/videos/reprise-auto-france-process.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Vidéo : comment vendre votre voiture en panne avec Reprise Auto France, en 3 étapes"></video>
-</section>
 
 <section class="steps">
   <div class="step"><div class="n">1</div><h3>Décrivez votre véhicule</h3><p>Marque, modèle, panne : 2 minutes, gratuit et sans engagement.</p></div>
